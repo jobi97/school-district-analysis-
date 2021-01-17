@@ -1,0 +1,27 @@
+# school-district-analysis-
+Overview: Tasked with performing an analysis of student and school performances by the school board, we utilized pandas library in jupyter notebook to create dataframes and series to get an in depth look into the data provided. The data provided by the school board included information regarding students and their resptive math and reading grades, as well as schools and their budget and type (district or charter).  We were asked to find relationships between student grades and the schools budget,size as well as school type.  It was later foung that the final grades for ninth graders who attend Thomas High School.  With that information, we were tasked with replacing these studnents grades with Null numbers and continuing with our analysis. The followigng results reflect how the calculated relationships were changed by the omission of those ninth graders.  
+
+Results:  
+1. Impact on the District Sumamry 
+    a. After the exclusion of ninth graders from the school_data_complete dataframe, the passing grades and averages dropped across the board.  This serves as proof that the Ninth grade students from THS's grades were inflated.  The changes are very marginal, though. Average reading score was the only figure maintained its value; however, in contrast the % of passing reading students decreased by .1%.  The changes are very marginal. This is to be expected, as there were only 460 students removed from the 39170 total student count.  The largest changes were .2% decreases in both "overall passing %" and "% passing math".  The change in total number of students dropped 1.17%, and the changes to the averages and %'s were less significant than that.  What this tells us is that the grade changes were not uniformly changed, or that not every student was impacted by the grade changes.  
+    
+2. Impact on the School Summary
+    a. The impact on the school summary is only reflected in the Thomas High School row.  These changes were drastic: Overall passing % increased to 90.63% from 65.1%,Passing reading % increased to 97.018% from 69.7%, Passing Math % increased to 93.18% from 66.9%.  Averages were not included in the updated per_school summary based on the omission of ninth graders, so the changes are not reflected. These will be discussed in a following section of this analysis.
+    
+3. New Standing for Thomas High School
+    a.  With the omission of ninth graders grades from the school, the schools standing relative to the other school has rose dramatically.  The school now places second overall in the rating of schools. 
+    
+4. Math and Reading scores by grade 
+    a. The only changes to the reading and math scores by grade are that the ninth graders are ommited. THS scores per grade are not impacted and the averages across grade 10-12 are also not impacted.  The new ninth grade math average is 80.12, down from 80.35.  The new ninth grade reading average is 82.42, down from 82.51.  
+
+
+5. by budget and type
+    a. When building a new data frame based on budget and then type, there were no changes found to any of the columns.  
+    
+
+
+
+    
+
+    
+  
